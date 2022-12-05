@@ -2,6 +2,18 @@ const fs = require("fs");
 const execSync = require("child_process").execSync;
 const YAML = require('json-to-pretty-yaml');
 
+// {
+//     "JSONData": {
+//     "API_KEY": "FLOW_PORTAL_R001",
+//         "CNTS_CRTC_KEY": "926ab517-c5e8-e192-55db-d44dc05891bf",
+//         "REQ_DATA": {
+//         "USER_ID": "prj.flow2",
+//             "RGSN_DTTM": "22398688923567"
+//
+//     }
+// }
+// }
+
 var requestBodyJson = {
     "description": "",
     "content": {
@@ -83,8 +95,9 @@ function resultExec(command){
     return array.slice(0,array.length-1);
 }
 
-var folderArray = resultExec("find D:/flow-was/src/WEB-INF/src/jex/studio/domain/act -type d -and ! -name '*act'");
+var folderArray = resultExec("find D:/flow-was/src/WEB-INF/src/jex/studio/domain/act -mtime -5 -type d -and ! -name '*act'");
 var folderObject = {}
+var definitionsJson = [];
 for(let i in folderArray){
     try{
         folderObject[folderArray[i]] = resultExec("ls " + folderArray[i] + " | grep -e 'In.java' -e 'Out.java'");
@@ -173,12 +186,29 @@ for (let i in folderArray) {
         tmpSwaagerArray.paths[path].post['responses'] = responsesJson;
         tmpSwaagerArray.components.schemas = tmpRecValue;
 
-        fs.writeFile('./JSON/'+tmpSwaagerArray.paths[path].post['tags'][0]+".json",JSON.stringify(tmpSwaagerArray, null, 2),function(err){
+
+        definitionsJson.push({
+            "name" : tmpSwaagerArray.paths[path].post['tags'][0],
+            "url" : "./definitions/" + tmpSwaagerArray.paths[path].post['tags'][0]+".json"
+        })
+
+        fs.writeFile('./public/definitions/'+tmpSwaagerArray.paths[path].post['tags'][0]+".json",JSON.stringify(tmpSwaagerArray, null, 2),function(err){
             if (err === null){}
         });
     } catch {
         console.log(folderArray[i])
     }
+
+    let sidebarConfig = "export const sidebarConfig = { title: \"FLOW API LIST\", extendTheme: { colors: { brand: { \"50\": \"#E6FFFA\", \"100\": \"#B2F5EA\", \"200\": \"#81E6D9\", \"300\": \"#4FD1C5\", \"400\": \"#38B2AC\", \"500\": \"#319795\", \"600\": \"#2C7A7B\", \"700\": \"#285E61\", \"800\": \"#234E52\", \"900\": \"#1D4044\" }, }, }, };"
+    let swaggerUI = "export const swaggerUIProps = { queryConfigEnabled: true,}; "
+    let definitions = "export const definitions =" + JSON.stringify(definitionsJson, null, 2);
+
+    let writeConfig = sidebarConfig + swaggerUI + definitions
+
+    fs.writeFile('./config.js',writeConfig,function(err){
+        if (err === null){}
+    });
+
 }
 
 function makeSwaggerJson(recursiveArray,folderPath){
