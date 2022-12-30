@@ -1,20 +1,7 @@
 const fs = require("fs");
 const execSync = require("child_process").execSync;
 const YAML = require('json-to-pretty-yaml');
-const cron = require('node-cron');
 
-task = cron.schedule('* * * * *', () => {
-// {
-//     "JSONData": {
-//     "API_KEY": "FLOW_PORTAL_R001",
-//         "CNTS_CRTC_KEY": "926ab517-c5e8-e192-55db-d44dc05891bf",
-//         "REQ_DATA": {
-//         "USER_ID": "prj.flow2",
-//             "RGSN_DTTM": "22398688923567"
-//
-//     }
-// }
-// }
 
     var requestBodyJson = {
         "description": "",
@@ -112,7 +99,7 @@ task = cron.schedule('* * * * *', () => {
         return array.slice(0,array.length-1);
     }
 
-    var folderArray = resultExec("find /WAS_DATA/webRoot/flow/src/WEB-INF/src/jex/studio/domain/act -type d -and ! -name '*act'");
+    var folderArray = resultExec("find D:/flow-was/src/WEB-INF/src/jex/studio/domain/act -type d -and ! -name '*act'");
     var folderObject = {}
     var definitionsJson = [];
     for(let i in folderArray){
@@ -239,12 +226,12 @@ task = cron.schedule('* * * * *', () => {
         const recordCsv2 = recordCsv.split('JexDomainUtil.parseIMODataItem(');
         const recordJsonArray = [];
         const recordArrayLength = recordCsv2.length-1;
-        recordCsv2[recordArrayLength] = recordCsv2[recordArrayLength].substring(recordCsv2[recordArrayLength].indexOf('};'))
+        recordCsv2[recordArrayLength] = recordCsv2[recordArrayLength].substring(0,recordCsv2[recordArrayLength].indexOf('};'))
 
         for(let i in recordCsv2)
         {
             if(recordCsv2[i].includes('type_imo')){
-                recordJsonArray.push(JSON.parse(recordCsv2[i].substring(0,recordCsv2[i].length-5)))
+                recordJsonArray.push(JSON.parse(recordCsv2[i].substring(0,recordCsv2[i].lastIndexOf(')'))))
             }
         }
 
@@ -272,7 +259,3 @@ task = cron.schedule('* * * * *', () => {
 
 // console.log(JSON.stringify(swaggerArray,null,2))
     console.log("finish : " + new Date());
-
-});
-
-task.start();
