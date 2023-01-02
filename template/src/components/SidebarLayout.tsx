@@ -24,8 +24,13 @@ interface ISidebarLayoutProps {
   logoInfo: {
     src: string;
     alt: string;
-    boxSize: string;
-  };
+    width: string;
+    display: string;
+    minWidth: string;
+    padding: string;
+    borderRadius: string;
+    background: string;
+  }
 }
 export function SidebarLayout({
   children,
@@ -51,10 +56,10 @@ export function SidebarLayout({
       bg={useColorModeValue("brand.400", "gray.800")}
       borderColor={useColorModeValue("inherit", "gray.700")}
       borderRightWidth="1px"
-      w="60"
+      w="80"
       {...props}
     >
-      <Flex flexDirection={"column"} px="4" py="5" align="center">
+      <Flex flexDirection={"column"} px="8" pt="5" align="center">
         <Logo {...logoInfo} />
         <Text
           fontSize="2xl"

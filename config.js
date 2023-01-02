@@ -1,5 +1,4 @@
-//바뀐것바뀐것
-export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { brand: { "50": "#E6FFFA", "100": "#B2F5EA", "200": "#81E6D9", "300": "#4FD1C5", "400": "#38B2AC", "500": "#319795", "600": "#2C7A7B", "700": "#285E61", "800": "#234E52", "900": "#1D4044" }, }, }, };export const swaggerUIProps = { queryConfigEnabled: true,}; export const definitions =[
+export const sidebarConfig = { logo: { src: "https://flow.team/flow-renewal/view/homepage/ko/assets/images/common/logo.svg", alt: "flow", width: "80%", display: "inline-block", minWidth: "50px", padding: "10px 24px", borderRadius: "900px", background: "#fff", }, title: "", extendTheme: { colors: { brand: { "50": "#E6FFFA", "100": "#B2F5EA", "200": "#81E6D9", "300": "#4FD1C5", "400": "#7163c3", "500": "#319795", "600": "#2C7A7B", "700": "#285E61", "800": "#234E52", "900": "#1D4044" }, }, }, };export const swaggerUIProps = { queryConfigEnabled: true,}; export const definitions =[
   {
     "name": "ACT_ALARM_LIST",
     "url": "./definitions/ACT_ALARM_LIST.json"
@@ -37,6 +36,10 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/ACT_DAYOFF_INFM_U001.json"
   },
   {
+    "name": "ACT_DECRYPT_FILE",
+    "url": "./definitions/ACT_DECRYPT_FILE.json"
+  },
+  {
     "name": "ACT_DELETE_EWS_CALENDAR",
     "url": "./definitions/ACT_DELETE_EWS_CALENDAR.json"
   },
@@ -51,6 +54,10 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
   {
     "name": "ACT_DELETE_FOLDER_PERMISSION",
     "url": "./definitions/ACT_DELETE_FOLDER_PERMISSION.json"
+  },
+  {
+    "name": "ACT_DELETE_MESSAGE_STTS_UPDATE",
+    "url": "./definitions/ACT_DELETE_MESSAGE_STTS_UPDATE.json"
   },
   {
     "name": "ACT_DELETE_TEMPORARY_POST",
@@ -87,6 +94,10 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
   {
     "name": "ACT_FILE_CHECK",
     "url": "./definitions/ACT_FILE_CHECK.json"
+  },
+  {
+    "name": "ACT_FILE_PROJECT_LIST",
+    "url": "./definitions/ACT_FILE_PROJECT_LIST.json"
   },
   {
     "name": "ACT_FIND_TEMPORARY_COUNT",
@@ -223,6 +234,10 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
   {
     "name": "ACT_MEMO",
     "url": "./definitions/ACT_MEMO.json"
+  },
+  {
+    "name": "ACT_MESSAGE_RETRIEVE_STTS_READ",
+    "url": "./definitions/ACT_MESSAGE_RETRIEVE_STTS_READ.json"
   },
   {
     "name": "ACT_NEW_CHAT_INVITATION",
@@ -429,10 +444,6 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/ACT_WHO_MESSAGE_READ.json"
   },
   {
-    "name": "ACT_WHO_RECEIEVED_MESSAGE_READ",
-    "url": "./definitions/ACT_WHO_RECEIEVED_MESSAGE_READ.json"
-  },
-  {
     "name": "adm_notice_r001",
     "url": "./definitions/adm_notice_r001.json"
   },
@@ -463,6 +474,50 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
   {
     "name": "API_CRTC_INFM_U001",
     "url": "./definitions/API_CRTC_INFM_U001.json"
+  },
+  {
+    "name": "api_test",
+    "url": "./definitions/api_test.json"
+  },
+  {
+    "name": "APPRLINE_AP_L001",
+    "url": "./definitions/APPRLINE_AP_L001.json"
+  },
+  {
+    "name": "APPRLINE_AP_R001",
+    "url": "./definitions/APPRLINE_AP_R001.json"
+  },
+  {
+    "name": "apprline_c001",
+    "url": "./definitions/apprline_c001.json"
+  },
+  {
+    "name": "apprline_d001",
+    "url": "./definitions/apprline_d001.json"
+  },
+  {
+    "name": "apprline_r001",
+    "url": "./definitions/apprline_r001.json"
+  },
+  {
+    "name": "apprline_r002",
+    "url": "./definitions/apprline_r002.json"
+  },
+  {
+    "name": "apprline_r003",
+    "url": "./definitions/apprline_r003.json"
+  },
+  {
+    "name": "apprline_r004",
+    "url": "./definitions/apprline_r004.json"
+  },
+  {
+    "name": "apprline_u001",
+    "url": "./definitions/apprline_u001.json"
+  },
+  {
+    "name": "apprline_u002",
+    "url": "./definitions/apprline_u002.json"
   },
   {
     "name": "approval_paper_r003",
@@ -509,6 +564,14 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/appr_agent_his_c001.json"
   },
   {
+    "name": "appr_agent_his_d001",
+    "url": "./definitions/appr_agent_his_d001.json"
+  },
+  {
+    "name": "appr_agent_his_r001",
+    "url": "./definitions/appr_agent_his_r001.json"
+  },
+  {
     "name": "APPR_ALAM_R101",
     "url": "./definitions/APPR_ALAM_R101.json"
   },
@@ -517,8 +580,112 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/APPR_AP_C001.json"
   },
   {
+    "name": "APPR_AP_D001",
+    "url": "./definitions/APPR_AP_D001.json"
+  },
+  {
+    "name": "APPR_AP_L001",
+    "url": "./definitions/APPR_AP_L001.json"
+  },
+  {
+    "name": "appr_c002",
+    "url": "./definitions/appr_c002.json"
+  },
+  {
+    "name": "appr_d007",
+    "url": "./definitions/appr_d007.json"
+  },
+  {
+    "name": "appr_d008",
+    "url": "./definitions/appr_d008.json"
+  },
+  {
     "name": "APPR_LOGIN_R001",
     "url": "./definitions/APPR_LOGIN_R001.json"
+  },
+  {
+    "name": "appr_paper_apprline_r001",
+    "url": "./definitions/appr_paper_apprline_r001.json"
+  },
+  {
+    "name": "appr_paper_c001",
+    "url": "./definitions/appr_paper_c001.json"
+  },
+  {
+    "name": "appr_paper_d001",
+    "url": "./definitions/appr_paper_d001.json"
+  },
+  {
+    "name": "appr_paper_r001",
+    "url": "./definitions/appr_paper_r001.json"
+  },
+  {
+    "name": "appr_paper_r002",
+    "url": "./definitions/appr_paper_r002.json"
+  },
+  {
+    "name": "appr_paper_r003",
+    "url": "./definitions/appr_paper_r003.json"
+  },
+  {
+    "name": "appr_paper_r004",
+    "url": "./definitions/appr_paper_r004.json"
+  },
+  {
+    "name": "appr_paper_r005",
+    "url": "./definitions/appr_paper_r005.json"
+  },
+  {
+    "name": "appr_paper_u001",
+    "url": "./definitions/appr_paper_u001.json"
+  },
+  {
+    "name": "appr_r001",
+    "url": "./definitions/appr_r001.json"
+  },
+  {
+    "name": "appr_r002",
+    "url": "./definitions/appr_r002.json"
+  },
+  {
+    "name": "appr_r003",
+    "url": "./definitions/appr_r003.json"
+  },
+  {
+    "name": "appr_r004",
+    "url": "./definitions/appr_r004.json"
+  },
+  {
+    "name": "appr_r005",
+    "url": "./definitions/appr_r005.json"
+  },
+  {
+    "name": "appr_r006",
+    "url": "./definitions/appr_r006.json"
+  },
+  {
+    "name": "appr_r007",
+    "url": "./definitions/appr_r007.json"
+  },
+  {
+    "name": "appr_r008",
+    "url": "./definitions/appr_r008.json"
+  },
+  {
+    "name": "appr_r009",
+    "url": "./definitions/appr_r009.json"
+  },
+  {
+    "name": "appr_r011",
+    "url": "./definitions/appr_r011.json"
+  },
+  {
+    "name": "appr_r012",
+    "url": "./definitions/appr_r012.json"
+  },
+  {
+    "name": "appr_r013",
+    "url": "./definitions/appr_r013.json"
   },
   {
     "name": "APPR_SET_C101",
@@ -529,12 +696,40 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/APPR_SET_R101.json"
   },
   {
+    "name": "APPR_STS_AP_L001",
+    "url": "./definitions/APPR_STS_AP_L001.json"
+  },
+  {
+    "name": "appr_sts_c001",
+    "url": "./definitions/appr_sts_c001.json"
+  },
+  {
     "name": "appr_sts_r001",
     "url": "./definitions/appr_sts_r001.json"
   },
   {
     "name": "appr_sts_r002",
     "url": "./definitions/appr_sts_r002.json"
+  },
+  {
+    "name": "appr_user_setting_c001",
+    "url": "./definitions/appr_user_setting_c001.json"
+  },
+  {
+    "name": "appr_user_setting_d001",
+    "url": "./definitions/appr_user_setting_d001.json"
+  },
+  {
+    "name": "appr_user_setting_r001",
+    "url": "./definitions/appr_user_setting_r001.json"
+  },
+  {
+    "name": "appr_user_setting_r002",
+    "url": "./definitions/appr_user_setting_r002.json"
+  },
+  {
+    "name": "appr_vouch_r001",
+    "url": "./definitions/appr_vouch_r001.json"
   },
   {
     "name": "BIZPLAY_GROUP_SYNC_C001",
@@ -569,6 +764,18 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/blbr_athr_grp_u002.json"
   },
   {
+    "name": "blbr_comm_r001",
+    "url": "./definitions/blbr_comm_r001.json"
+  },
+  {
+    "name": "blbr_dtl_ap_r001",
+    "url": "./definitions/blbr_dtl_ap_r001.json"
+  },
+  {
+    "name": "blbr_list_ap_l001",
+    "url": "./definitions/blbr_list_ap_l001.json"
+  },
+  {
     "name": "blbr_mgr_c001",
     "url": "./definitions/blbr_mgr_c001.json"
   },
@@ -597,6 +804,70 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/blbr_r001.json"
   },
   {
+    "name": "board_article_c001",
+    "url": "./definitions/board_article_c001.json"
+  },
+  {
+    "name": "board_article_c002",
+    "url": "./definitions/board_article_c002.json"
+  },
+  {
+    "name": "board_article_c004",
+    "url": "./definitions/board_article_c004.json"
+  },
+  {
+    "name": "board_article_d002",
+    "url": "./definitions/board_article_d002.json"
+  },
+  {
+    "name": "board_article_d003",
+    "url": "./definitions/board_article_d003.json"
+  },
+  {
+    "name": "board_article_l001",
+    "url": "./definitions/board_article_l001.json"
+  },
+  {
+    "name": "board_article_l002",
+    "url": "./definitions/board_article_l002.json"
+  },
+  {
+    "name": "board_article_l003",
+    "url": "./definitions/board_article_l003.json"
+  },
+  {
+    "name": "board_article_l004",
+    "url": "./definitions/board_article_l004.json"
+  },
+  {
+    "name": "board_article_r001",
+    "url": "./definitions/board_article_r001.json"
+  },
+  {
+    "name": "board_article_r002",
+    "url": "./definitions/board_article_r002.json"
+  },
+  {
+    "name": "board_article_r003",
+    "url": "./definitions/board_article_r003.json"
+  },
+  {
+    "name": "board_article_u001",
+    "url": "./definitions/board_article_u001.json"
+  },
+  {
+    "name": "board_article_u002",
+    "url": "./definitions/board_article_u002.json"
+  },
+  {
+    "name": "board_article_u003",
+    "url": "./definitions/board_article_u003.json"
+  },
+  {
+    "name": "board_c001",
+    "url": "./definitions/board_c001.json"
+  },
+  {
     "name": "board_d001",
     "url": "./definitions/board_d001.json"
   },
@@ -613,6 +884,30 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/board_invt_r001.json"
   },
   {
+    "name": "board_l001",
+    "url": "./definitions/board_l001.json"
+  },
+  {
+    "name": "board_l002",
+    "url": "./definitions/board_l002.json"
+  },
+  {
+    "name": "board_l003",
+    "url": "./definitions/board_l003.json"
+  },
+  {
+    "name": "board_l004",
+    "url": "./definitions/board_l004.json"
+  },
+  {
+    "name": "board_l005",
+    "url": "./definitions/board_l005.json"
+  },
+  {
+    "name": "board_l006",
+    "url": "./definitions/board_l006.json"
+  },
+  {
     "name": "board_l007",
     "url": "./definitions/board_l007.json"
   },
@@ -621,20 +916,40 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/board_l008.json"
   },
   {
+    "name": "board_r001",
+    "url": "./definitions/board_r001.json"
+  },
+  {
+    "name": "board_r002",
+    "url": "./definitions/board_r002.json"
+  },
+  {
     "name": "board_r003",
     "url": "./definitions/board_r003.json"
   },
   {
-    "name": "oard_stnd_gate",
-    "url": "./definitions/oard_stnd_gate.json"
+    "name": "board_stnd_gate",
+    "url": "./definitions/board_stnd_gate.json"
   },
   {
-    "name": "oard_user_r001",
-    "url": "./definitions/oard_user_r001.json"
+    "name": "board_u001",
+    "url": "./definitions/board_u001.json"
   },
   {
-    "name": "oard_user_u001",
-    "url": "./definitions/oard_user_u001.json"
+    "name": "board_u002",
+    "url": "./definitions/board_u002.json"
+  },
+  {
+    "name": "board_u003",
+    "url": "./definitions/board_u003.json"
+  },
+  {
+    "name": "board_user_r001",
+    "url": "./definitions/board_user_r001.json"
+  },
+  {
+    "name": "board_user_u001",
+    "url": "./definitions/board_user_u001.json"
   },
   {
     "name": "CALENDAR_BG_COLOR_R101",
@@ -725,8 +1040,16 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/cnpl_my_grp_l001.json"
   },
   {
+    "name": "cnpl_my_grp_r001",
+    "url": "./definitions/cnpl_my_grp_r001.json"
+  },
+  {
     "name": "CNPL_NTNL_INFM_R001",
     "url": "./definitions/CNPL_NTNL_INFM_R001.json"
+  },
+  {
+    "name": "cnpl_r001",
+    "url": "./definitions/cnpl_r001.json"
   },
   {
     "name": "cnpl_rcmd_c001",
@@ -739,6 +1062,14 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
   {
     "name": "cnpmg_pop_l001",
     "url": "./definitions/cnpmg_pop_l001.json"
+  },
+  {
+    "name": "cnpmg_pop_r001",
+    "url": "./definitions/cnpmg_pop_r001.json"
+  },
+  {
+    "name": "CNTS_FILE_UPLOAD",
+    "url": "./definitions/CNTS_FILE_UPLOAD.json"
   },
   {
     "name": "COLABO2_ADMIN_REPORT_R001",
@@ -1215,6 +1546,10 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
   {
     "name": "COLABO2_FILE_FLD_R001",
     "url": "./definitions/COLABO2_FILE_FLD_R001.json"
+  },
+  {
+    "name": "COLABO2_FILE_FLD_R003",
+    "url": "./definitions/COLABO2_FILE_FLD_R003.json"
   },
   {
     "name": "COLABO2_FILE_FLD_R004",
@@ -1849,6 +2184,10 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/COLABO_ALAM_L101.json"
   },
   {
+    "name": "COLABO_ALAM_R101",
+    "url": "./definitions/COLABO_ALAM_R101.json"
+  },
+  {
     "name": "colabo_app_gate",
     "url": "./definitions/colabo_app_gate.json"
   },
@@ -1873,8 +2212,8 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/colabo_c002.json"
   },
   {
-    "name": "olabo_c003",
-    "url": "./definitions/olabo_c003.json"
+    "name": "colabo_c003",
+    "url": "./definitions/colabo_c003.json"
   },
   {
     "name": "colabo_c004",
@@ -1883,6 +2222,14 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
   {
     "name": "COLABO_C102",
     "url": "./definitions/COLABO_C102.json"
+  },
+  {
+    "name": "COLABO_C103",
+    "url": "./definitions/COLABO_C103.json"
+  },
+  {
+    "name": "COLABO_C104",
+    "url": "./definitions/COLABO_C104.json"
   },
   {
     "name": "COLABO_C105",
@@ -1909,6 +2256,10 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/colabo_commt_d001.json"
   },
   {
+    "name": "COLABO_COMMT_D101",
+    "url": "./definitions/COLABO_COMMT_D101.json"
+  },
+  {
     "name": "colabo_commt_l001",
     "url": "./definitions/colabo_commt_l001.json"
   },
@@ -1919,6 +2270,10 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
   {
     "name": "colabo_commt_r001",
     "url": "./definitions/colabo_commt_r001.json"
+  },
+  {
+    "name": "colabo_commt_u001",
+    "url": "./definitions/colabo_commt_u001.json"
   },
   {
     "name": "colabo_commt_u002",
@@ -1965,6 +2320,14 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/colabo_fld_c001.json"
   },
   {
+    "name": "COLABO_FLD_C101",
+    "url": "./definitions/COLABO_FLD_C101.json"
+  },
+  {
+    "name": "colabo_fld_d001",
+    "url": "./definitions/colabo_fld_d001.json"
+  },
+  {
     "name": "colabo_fld_icon_l001",
     "url": "./definitions/colabo_fld_icon_l001.json"
   },
@@ -1985,6 +2348,10 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/colabo_fld_l003.json"
   },
   {
+    "name": "COLABO_FLD_L101",
+    "url": "./definitions/COLABO_FLD_L101.json"
+  },
+  {
     "name": "colabo_fld_u001",
     "url": "./definitions/colabo_fld_u001.json"
   },
@@ -1997,16 +2364,28 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/colabo_fld_u003.json"
   },
   {
+    "name": "COLABO_FLD_U101",
+    "url": "./definitions/COLABO_FLD_U101.json"
+  },
+  {
     "name": "colabo_invt_c001",
     "url": "./definitions/colabo_invt_c001.json"
+  },
+  {
+    "name": "colabo_invt_c002",
+    "url": "./definitions/colabo_invt_c002.json"
   },
   {
     "name": "colabo_l001",
     "url": "./definitions/colabo_l001.json"
   },
   {
-    "name": "olabo_l003",
-    "url": "./definitions/olabo_l003.json"
+    "name": "colabo_l002",
+    "url": "./definitions/colabo_l002.json"
+  },
+  {
+    "name": "colabo_l003",
+    "url": "./definitions/colabo_l003.json"
   },
   {
     "name": "colabo_l004",
@@ -2027,6 +2406,14 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
   {
     "name": "COLABO_L102",
     "url": "./definitions/COLABO_L102.json"
+  },
+  {
+    "name": "COLABO_L103",
+    "url": "./definitions/COLABO_L103.json"
+  },
+  {
+    "name": "COLABO_L104",
+    "url": "./definitions/COLABO_L104.json"
   },
   {
     "name": "COLABO_L105",
@@ -2157,6 +2544,10 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/COLABO_SET_U101.json"
   },
   {
+    "name": "COLABO_SNDCE_L101",
+    "url": "./definitions/COLABO_SNDCE_L101.json"
+  },
+  {
     "name": "COLABO_TEST_ACTION",
     "url": "./definitions/COLABO_TEST_ACTION.json"
   },
@@ -2183,6 +2574,10 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
   {
     "name": "colabo_u003",
     "url": "./definitions/colabo_u003.json"
+  },
+  {
+    "name": "colabo_u004",
+    "url": "./definitions/colabo_u004.json"
   },
   {
     "name": "colabo_u005",
@@ -2215,6 +2610,14 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
   {
     "name": "COLABO_USER_LEDG_R002",
     "url": "./definitions/COLABO_USER_LEDG_R002.json"
+  },
+  {
+    "name": "colabo_user_set_c001",
+    "url": "./definitions/colabo_user_set_c001.json"
+  },
+  {
+    "name": "colabo_user_set_r001",
+    "url": "./definitions/colabo_user_set_r001.json"
   },
   {
     "name": "colabo_user_u001",
@@ -2337,48 +2740,88 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/collabo_u0002.json"
   },
   {
+    "name": "comm_0001_r001",
+    "url": "./definitions/comm_0001_r001.json"
+  },
+  {
+    "name": "comm_atch_c001",
+    "url": "./definitions/comm_atch_c001.json"
+  },
+  {
     "name": "comm_atch_r001",
     "url": "./definitions/comm_atch_r001.json"
+  },
+  {
+    "name": "comm_auto",
+    "url": "./definitions/comm_auto.json"
   },
   {
     "name": "comm_b2bccstm_c001",
     "url": "./definitions/comm_b2bccstm_c001.json"
   },
   {
+    "name": "comm_b2bccstm_l001",
+    "url": "./definitions/comm_b2bccstm_l001.json"
+  },
+  {
+    "name": "comm_cnts_0001",
+    "url": "./definitions/comm_cnts_0001.json"
+  },
+  {
+    "name": "comm_code",
+    "url": "./definitions/comm_code.json"
+  },
+  {
     "name": "comm_code_r001",
     "url": "./definitions/comm_code_r001.json"
+  },
+  {
+    "name": "comm_empinfo_l001",
+    "url": "./definitions/comm_empinfo_l001.json"
   },
   {
     "name": "COMM_INFO_L101",
     "url": "./definitions/COMM_INFO_L101.json"
   },
   {
+    "name": "comm_inq_0003",
+    "url": "./definitions/comm_inq_0003.json"
+  },
+  {
+    "name": "comm_mngr_r001",
+    "url": "./definitions/comm_mngr_r001.json"
+  },
+  {
+    "name": "comm_portal_user_r001",
+    "url": "./definitions/comm_portal_user_r001.json"
+  },
+  {
     "name": "comm_sms_trn_c001",
     "url": "./definitions/comm_sms_trn_c001.json"
   },
   {
-    "name": "OUPON_0001_01",
-    "url": "./definitions/OUPON_0001_01.json"
+    "name": "COUPON_0001_01",
+    "url": "./definitions/COUPON_0001_01.json"
   },
   {
-    "name": "oupon_l0001",
-    "url": "./definitions/oupon_l0001.json"
+    "name": "coupon_l0001",
+    "url": "./definitions/coupon_l0001.json"
   },
   {
-    "name": "oupon_l001",
-    "url": "./definitions/oupon_l001.json"
+    "name": "coupon_l001",
+    "url": "./definitions/coupon_l001.json"
   },
   {
-    "name": "OUPON_R001_01",
-    "url": "./definitions/OUPON_R001_01.json"
+    "name": "COUPON_R001_01",
+    "url": "./definitions/COUPON_R001_01.json"
   },
   {
-    "name": "oup_l0001",
-    "url": "./definitions/oup_l0001.json"
+    "name": "coup_l0001",
+    "url": "./definitions/coup_l0001.json"
   },
   {
-    "name": "oup_r0001",
-    "url": "./definitions/oup_r0001.json"
+    "name": "coup_r0001",
+    "url": "./definitions/coup_r0001.json"
   },
   {
     "name": "cpnmg_login_001",
@@ -2393,24 +2836,40 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/dept_mth_l002.json"
   },
   {
-    "name": "ept_r001",
-    "url": "./definitions/ept_r001.json"
+    "name": "dept_r001",
+    "url": "./definitions/dept_r001.json"
   },
   {
-    "name": "ummy_dpt_tr_act_01",
-    "url": "./definitions/ummy_dpt_tr_act_01.json"
+    "name": "dummy_dpt_tr_act_01",
+    "url": "./definitions/dummy_dpt_tr_act_01.json"
   },
   {
-    "name": "ummy_l001",
-    "url": "./definitions/ummy_l001.json"
+    "name": "dummy_l001",
+    "url": "./definitions/dummy_l001.json"
   },
   {
-    "name": "ummy_test",
-    "url": "./definitions/ummy_test.json"
+    "name": "dummy_test",
+    "url": "./definitions/dummy_test.json"
   },
   {
-    "name": "ummy_test1",
-    "url": "./definitions/ummy_test1.json"
+    "name": "dummy_test1",
+    "url": "./definitions/dummy_test1.json"
+  },
+  {
+    "name": "dvsn_inq_0001",
+    "url": "./definitions/dvsn_inq_0001.json"
+  },
+  {
+    "name": "dvsn_inq_0002",
+    "url": "./definitions/dvsn_inq_0002.json"
+  },
+  {
+    "name": "dvsn_ldgr_l001",
+    "url": "./definitions/dvsn_ldgr_l001.json"
+  },
+  {
+    "name": "dvsn_user_l001",
+    "url": "./definitions/dvsn_user_l001.json"
   },
   {
     "name": "EMAIL_EXPORT_C001",
@@ -2429,12 +2888,16 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/empl_bkmk_r001.json"
   },
   {
-    "name": "mpl_cnpl_l001",
-    "url": "./definitions/mpl_cnpl_l001.json"
+    "name": "empl_cnpl_l001",
+    "url": "./definitions/empl_cnpl_l001.json"
   },
   {
     "name": "empl_dvsn_cnt_l001",
     "url": "./definitions/empl_dvsn_cnt_l001.json"
+  },
+  {
+    "name": "empl_dvsn_l001",
+    "url": "./definitions/empl_dvsn_l001.json"
   },
   {
     "name": "EMPL_INFM_L101",
@@ -2445,8 +2908,20 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/empl_infm_r001.json"
   },
   {
+    "name": "empl_infm_r002",
+    "url": "./definitions/empl_infm_r002.json"
+  },
+  {
     "name": "empl_infm_r003",
     "url": "./definitions/empl_infm_r003.json"
+  },
+  {
+    "name": "empl_infm_r004",
+    "url": "./definitions/empl_infm_r004.json"
+  },
+  {
+    "name": "empl_my_grp_r001",
+    "url": "./definitions/empl_my_grp_r001.json"
   },
   {
     "name": "EMPL_PWD_U001",
@@ -2455,6 +2930,14 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
   {
     "name": "EMPL_SYNC_R001",
     "url": "./definitions/EMPL_SYNC_R001.json"
+  },
+  {
+    "name": "fileDownload_0001",
+    "url": "./definitions/fileDownload_0001.json"
+  },
+  {
+    "name": "file_upload",
+    "url": "./definitions/file_upload.json"
   },
   {
     "name": "FLOW_ADRS_INFM_C001",
@@ -2793,6 +3276,10 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/FLOW_CNTS_EXPORT_R001.json"
   },
   {
+    "name": "FLOW_CNTT_C001",
+    "url": "./definitions/FLOW_CNTT_C001.json"
+  },
+  {
     "name": "FLOW_CNTT_R001",
     "url": "./definitions/FLOW_CNTT_R001.json"
   },
@@ -2857,12 +3344,24 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/FLOW_DASH_R001.json"
   },
   {
+    "name": "FLOW_DELETE_HISTORY_R001",
+    "url": "./definitions/FLOW_DELETE_HISTORY_R001.json"
+  },
+  {
+    "name": "FLOW_DELETE_HISTORY_R002",
+    "url": "./definitions/FLOW_DELETE_HISTORY_R002.json"
+  },
+  {
     "name": "FLOW_DEVICE_ACCESS_D001",
     "url": "./definitions/FLOW_DEVICE_ACCESS_D001.json"
   },
   {
     "name": "FLOW_DEVICE_ACCESS_R001",
     "url": "./definitions/FLOW_DEVICE_ACCESS_R001.json"
+  },
+  {
+    "name": "FLOW_DISABLE_PROJECT_D001",
+    "url": "./definitions/FLOW_DISABLE_PROJECT_D001.json"
   },
   {
     "name": "FLOW_DNLD_DEVICE_R001",
@@ -3065,6 +3564,10 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/FLOW_INVT_R005.json"
   },
   {
+    "name": "FLOW_JOIN_C001",
+    "url": "./definitions/FLOW_JOIN_C001.json"
+  },
+  {
     "name": "FLOW_JOIN_R001",
     "url": "./definitions/FLOW_JOIN_R001.json"
   },
@@ -3223,10 +3726,6 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
   {
     "name": "FLOW_PB_CSTM_R001",
     "url": "./definitions/FLOW_PB_CSTM_R001.json"
-  },
-  {
-    "name": "FLOW_PORTAL_R001",
-    "url": "./definitions/FLOW_PORTAL_R001.json"
   },
   {
     "name": "FLOW_PORTAL_U001",
@@ -3633,8 +4132,8 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/FLOW_ZOOM_AUTH_U001.json"
   },
   {
-    "name": "ate0001",
-    "url": "./definitions/ate0001.json"
+    "name": "gate0001",
+    "url": "./definitions/gate0001.json"
   },
   {
     "name": "goLogin",
@@ -3661,6 +4160,14 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/grp_blnc_u001.json"
   },
   {
+    "name": "grp_list_r001",
+    "url": "./definitions/grp_list_r001.json"
+  },
+  {
+    "name": "grp_user_list_r001",
+    "url": "./definitions/grp_user_list_r001.json"
+  },
+  {
     "name": "GTALK_LOGIN_API",
     "url": "./definitions/GTALK_LOGIN_API.json"
   },
@@ -3669,12 +4176,12 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/HEC_SCHD_API.json"
   },
   {
-    "name": "r_coupon_001",
-    "url": "./definitions/r_coupon_001.json"
+    "name": "hr_coupon_001",
+    "url": "./definitions/hr_coupon_001.json"
   },
   {
-    "name": "r_coup_l001",
-    "url": "./definitions/r_coup_l001.json"
+    "name": "hr_coup_l001",
+    "url": "./definitions/hr_coup_l001.json"
   },
   {
     "name": "IAMPORT_PAYMENT_C001",
@@ -3749,16 +4256,20 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/LDAP_AUTH_API.json"
   },
   {
-    "name": "IST_0001_01_L0001",
-    "url": "./definitions/IST_0001_01_L0001.json"
+    "name": "LIST_0001_01_L0001",
+    "url": "./definitions/LIST_0001_01_L0001.json"
   },
   {
-    "name": "IST_0001_01_L0002",
-    "url": "./definitions/IST_0001_01_L0002.json"
+    "name": "LIST_0001_01_L0002",
+    "url": "./definitions/LIST_0001_01_L0002.json"
   },
   {
     "name": "LOGIN_0001_01_L0001",
     "url": "./definitions/LOGIN_0001_01_L0001.json"
+  },
+  {
+    "name": "LOGIN_0001_02_R0001",
+    "url": "./definitions/LOGIN_0001_02_R0001.json"
   },
   {
     "name": "login_coupon_l001",
@@ -3773,16 +4284,88 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/login_ebnk_usr.json"
   },
   {
-    "name": "ember_edit_s",
-    "url": "./definitions/ember_edit_s.json"
+    "name": "mBoard_0002_03_01",
+    "url": "./definitions/mBoard_0002_03_01.json"
   },
   {
-    "name": "ember_edit_si",
-    "url": "./definitions/ember_edit_si.json"
+    "name": "member_edit_s",
+    "url": "./definitions/member_edit_s.json"
   },
   {
-    "name": "ember_list_s",
-    "url": "./definitions/ember_list_s.json"
+    "name": "member_edit_s1",
+    "url": "./definitions/member_edit_s1.json"
+  },
+  {
+    "name": "member_edit_si",
+    "url": "./definitions/member_edit_si.json"
+  },
+  {
+    "name": "member_join_i",
+    "url": "./definitions/member_join_i.json"
+  },
+  {
+    "name": "member_list_s",
+    "url": "./definitions/member_list_s.json"
+  },
+  {
+    "name": "memo_0001_c001",
+    "url": "./definitions/memo_0001_c001.json"
+  },
+  {
+    "name": "memo_0001_d001",
+    "url": "./definitions/memo_0001_d001.json"
+  },
+  {
+    "name": "memo_0001_l002",
+    "url": "./definitions/memo_0001_l002.json"
+  },
+  {
+    "name": "memo_0001_l003",
+    "url": "./definitions/memo_0001_l003.json"
+  },
+  {
+    "name": "memo_0001_r001",
+    "url": "./definitions/memo_0001_r001.json"
+  },
+  {
+    "name": "memo_0001_u001",
+    "url": "./definitions/memo_0001_u001.json"
+  },
+  {
+    "name": "memo_0002_c001",
+    "url": "./definitions/memo_0002_c001.json"
+  },
+  {
+    "name": "memo_0002_c002",
+    "url": "./definitions/memo_0002_c002.json"
+  },
+  {
+    "name": "memo_0002_l001",
+    "url": "./definitions/memo_0002_l001.json"
+  },
+  {
+    "name": "memo_0002_r001",
+    "url": "./definitions/memo_0002_r001.json"
+  },
+  {
+    "name": "memo_0002_u001",
+    "url": "./definitions/memo_0002_u001.json"
+  },
+  {
+    "name": "memo_0003_c001",
+    "url": "./definitions/memo_0003_c001.json"
+  },
+  {
+    "name": "memo_0004_r001",
+    "url": "./definitions/memo_0004_r001.json"
+  },
+  {
+    "name": "memo_sso",
+    "url": "./definitions/memo_sso.json"
+  },
+  {
+    "name": "memo_sso_c001",
+    "url": "./definitions/memo_sso_c001.json"
   },
   {
     "name": "MIRAE_ITSM_IT_C001",
@@ -3811,6 +4394,26 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
   {
     "name": "mth_gr_dept_loo1",
     "url": "./definitions/mth_gr_dept_loo1.json"
+  },
+  {
+    "name": "mygrp_inq_0001",
+    "url": "./definitions/mygrp_inq_0001.json"
+  },
+  {
+    "name": "mygrp_inq_0002",
+    "url": "./definitions/mygrp_inq_0002.json"
+  },
+  {
+    "name": "my_grp_l001",
+    "url": "./definitions/my_grp_l001.json"
+  },
+  {
+    "name": "my_grp_user_l001",
+    "url": "./definitions/my_grp_user_l001.json"
+  },
+  {
+    "name": "m_board_article_r001",
+    "url": "./definitions/m_board_article_r001.json"
   },
   {
     "name": "ntl_cd_infm_r001",
@@ -3861,8 +4464,12 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/OKR_WEEKLY_REPORT_R001.json"
   },
   {
-    "name": "eople_r001",
-    "url": "./definitions/eople_r001.json"
+    "name": "OPENAPI_L001",
+    "url": "./definitions/OPENAPI_L001.json"
+  },
+  {
+    "name": "people_r001",
+    "url": "./definitions/people_r001.json"
   },
   {
     "name": "PROJECT_TEMPLATE_C001",
@@ -3883,6 +4490,18 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
   {
     "name": "PROJECT_TEMPLATE_U001",
     "url": "./definitions/PROJECT_TEMPLATE_U001.json"
+  },
+  {
+    "name": "pst_ap_c001",
+    "url": "./definitions/pst_ap_c001.json"
+  },
+  {
+    "name": "pst_ap_d001",
+    "url": "./definitions/pst_ap_d001.json"
+  },
+  {
+    "name": "pst_ap_u001",
+    "url": "./definitions/pst_ap_u001.json"
   },
   {
     "name": "pst_c001",
@@ -3913,6 +4532,14 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/pst_d001.json"
   },
   {
+    "name": "pst_dtl_ap_r001",
+    "url": "./definitions/pst_dtl_ap_r001.json"
+  },
+  {
+    "name": "pst_list_ap_l001",
+    "url": "./definitions/pst_list_ap_l001.json"
+  },
+  {
     "name": "pst_r001",
     "url": "./definitions/pst_r001.json"
   },
@@ -3929,8 +4556,100 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/rmds_blnc_u001.json"
   },
   {
+    "name": "schd_c001",
+    "url": "./definitions/schd_c001.json"
+  },
+  {
+    "name": "schd_clsf_r001",
+    "url": "./definitions/schd_clsf_r001.json"
+  },
+  {
+    "name": "schd_d001",
+    "url": "./definitions/schd_d001.json"
+  },
+  {
+    "name": "schd_l001",
+    "url": "./definitions/schd_l001.json"
+  },
+  {
+    "name": "schd_l002",
+    "url": "./definitions/schd_l002.json"
+  },
+  {
+    "name": "schd_r001",
+    "url": "./definitions/schd_r001.json"
+  },
+  {
+    "name": "schd_setup_c001",
+    "url": "./definitions/schd_setup_c001.json"
+  },
+  {
+    "name": "schd_setup_c002",
+    "url": "./definitions/schd_setup_c002.json"
+  },
+  {
+    "name": "schd_setup_c003",
+    "url": "./definitions/schd_setup_c003.json"
+  },
+  {
+    "name": "schd_setup_l001",
+    "url": "./definitions/schd_setup_l001.json"
+  },
+  {
+    "name": "schd_setup_r001",
+    "url": "./definitions/schd_setup_r001.json"
+  },
+  {
+    "name": "schd_shrn_l001",
+    "url": "./definitions/schd_shrn_l001.json"
+  },
+  {
+    "name": "schd_shrn_l002",
+    "url": "./definitions/schd_shrn_l002.json"
+  },
+  {
+    "name": "schd_shrn_u001",
+    "url": "./definitions/schd_shrn_u001.json"
+  },
+  {
+    "name": "schd_u001",
+    "url": "./definitions/schd_u001.json"
+  },
+  {
+    "name": "scrh_del_0001",
+    "url": "./definitions/scrh_del_0001.json"
+  },
+  {
+    "name": "scrh_inq_0001",
+    "url": "./definitions/scrh_inq_0001.json"
+  },
+  {
+    "name": "scrh_inq_0002",
+    "url": "./definitions/scrh_inq_0002.json"
+  },
+  {
+    "name": "scrh_inq_0003",
+    "url": "./definitions/scrh_inq_0003.json"
+  },
+  {
     "name": "scrh_inq_0004",
     "url": "./definitions/scrh_inq_0004.json"
+  },
+  {
+    "name": "scrh_inq_0005",
+    "url": "./definitions/scrh_inq_0005.json"
+  },
+  {
+    "name": "scrh_inq_0006",
+    "url": "./definitions/scrh_inq_0006.json"
+  },
+  {
+    "name": "scrh_inq_0007",
+    "url": "./definitions/scrh_inq_0007.json"
+  },
+  {
+    "name": "scrh_inq_0008",
+    "url": "./definitions/scrh_inq_0008.json"
   },
   {
     "name": "scrh_inq_0009",
@@ -3941,6 +4660,10 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/scrh_inq_0010.json"
   },
   {
+    "name": "scrh_inq_0012",
+    "url": "./definitions/scrh_inq_0012.json"
+  },
+  {
     "name": "scrh_inq_0013",
     "url": "./definitions/scrh_inq_0013.json"
   },
@@ -3949,16 +4672,60 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/scrh_inq_0014.json"
   },
   {
-    "name": "crh_inq_0016",
-    "url": "./definitions/crh_inq_0016.json"
+    "name": "scrh_inq_0015",
+    "url": "./definitions/scrh_inq_0015.json"
+  },
+  {
+    "name": "scrh_inq_0016",
+    "url": "./definitions/scrh_inq_0016.json"
   },
   {
     "name": "scrh_inq_0017",
     "url": "./definitions/scrh_inq_0017.json"
   },
   {
+    "name": "scrh_inq_0018",
+    "url": "./definitions/scrh_inq_0018.json"
+  },
+  {
     "name": "scrh_sav_0001",
     "url": "./definitions/scrh_sav_0001.json"
+  },
+  {
+    "name": "scrh_sav_0002",
+    "url": "./definitions/scrh_sav_0002.json"
+  },
+  {
+    "name": "scrh_sav_0003",
+    "url": "./definitions/scrh_sav_0003.json"
+  },
+  {
+    "name": "scrh_sav_0004",
+    "url": "./definitions/scrh_sav_0004.json"
+  },
+  {
+    "name": "scrh_sav_0006",
+    "url": "./definitions/scrh_sav_0006.json"
+  },
+  {
+    "name": "scrh_sav_0007",
+    "url": "./definitions/scrh_sav_0007.json"
+  },
+  {
+    "name": "scrh_sav_0008",
+    "url": "./definitions/scrh_sav_0008.json"
+  },
+  {
+    "name": "scrh_upd_0001",
+    "url": "./definitions/scrh_upd_0001.json"
+  },
+  {
+    "name": "scrh_upd_0002",
+    "url": "./definitions/scrh_upd_0002.json"
+  },
+  {
+    "name": "scrh_upd_0003",
+    "url": "./definitions/scrh_upd_0003.json"
   },
   {
     "name": "SEMO_USER_CHECK_R001",
@@ -3971,6 +4738,14 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
   {
     "name": "SIGNUP",
     "url": "./definitions/SIGNUP.json"
+  },
+  {
+    "name": "sso_main",
+    "url": "./definitions/sso_main.json"
+  },
+  {
+    "name": "sso_main_biz",
+    "url": "./definitions/sso_main_biz.json"
   },
   {
     "name": "TEMPLATE_CATEGORY_C001",
@@ -3989,12 +4764,16 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/TEMPLATE_CATEGORY_U001.json"
   },
   {
+    "name": "test_action",
+    "url": "./definitions/test_action.json"
+  },
+  {
     "name": "TEST_API",
     "url": "./definitions/TEST_API.json"
   },
   {
-    "name": "est_colabo_ap",
-    "url": "./definitions/est_colabo_ap.json"
+    "name": "test_colabo_ap",
+    "url": "./definitions/test_colabo_ap.json"
   },
   {
     "name": "test_colabo_l001",
@@ -4013,16 +4792,12 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/test_send_mail.json"
   },
   {
-    "name": "ree_act_0001",
-    "url": "./definitions/ree_act_0001.json"
+    "name": "tree_act_t0001",
+    "url": "./definitions/tree_act_t0001.json"
   },
   {
-    "name": "ree_act_t0001",
-    "url": "./definitions/ree_act_t0001.json"
-  },
-  {
-    "name": "ree_emp_l001",
-    "url": "./definitions/ree_emp_l001.json"
+    "name": "tree_emp_l001",
+    "url": "./definitions/tree_emp_l001.json"
   },
   {
     "name": "tree_emp_test",
@@ -4045,8 +4820,12 @@ export let sidebarConfig = { title: "FLOW API LIST", extendTheme: { colors: { br
     "url": "./definitions/USE_INTT_INFM_U010.json"
   },
   {
-    "name": "se_intt_snch",
-    "url": "./definitions/se_intt_snch.json"
+    "name": "use_intt_snch",
+    "url": "./definitions/use_intt_snch.json"
+  },
+  {
+    "name": "use_intt_snch_l001",
+    "url": "./definitions/use_intt_snch_l001.json"
   },
   {
     "name": "usr_n_pmsn_rm_d002",

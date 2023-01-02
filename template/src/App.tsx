@@ -18,14 +18,14 @@ function App() {
 
   return (
     <Box fontSize="xl">
-      <Grid minW="100vw" minH="100vh" px={4}>
+      <Grid minW="100vw" minH="100vh" px={28}>
         <HStack justify={"center"}>
           <SidebarLayout
             logoInfo={sidebarConfig.logo}
             definition={definition}
             onDefinitionClick={setDefinition}
             definitions={definitions}
-            title={sidebarConfig?.title || "Swagger UI React with Sidebar"}
+            title={sidebarConfig?.title || ""}
             topNavItems={[<ColorModeSwitcher aria-label="" />]}
           >
             <SwaggerUI {...swaggerUIProps} url={definition.url} />

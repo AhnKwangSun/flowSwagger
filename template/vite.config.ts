@@ -8,7 +8,7 @@ const htmlPlugin = () => {
     transformIndexHtml(html) {
       return html.replace(
         /<title>(.*?)<\/title>/,
-        `<title>${sidebarConfig.title}</title>`
+        `<title></title>`
       );
     },
   };
