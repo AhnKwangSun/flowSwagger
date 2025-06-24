@@ -239,7 +239,7 @@ for (let i in folderArray) {
 }
 
 let sidebarConfig = "export const sidebarConfig = { logo: { src: \"https://flow.team/flow-renewal/view/homepage/ko/assets/images/common/logo.svg\", alt: \"flow\", width: \"80%\", display: \"inline-block\", minWidth: \"50px\", padding: \"10px 24px\", borderRadius: \"900px\", background: \"#fff\", }, title: \"\", extendTheme: { colors: { brand: { \"50\": \"#E6FFFA\", \"100\": \"#B2F5EA\", \"200\": \"#81E6D9\", \"300\": \"#4FD1C5\", \"400\": \"#7163c3\", \"500\": \"#319795\", \"600\": \"#2C7A7B\", \"700\": \"#285E61\", \"800\": \"#234E52\", \"900\": \"#1D4044\" }, }, }, };"
-let swaggerUI = "export const swaggerUIProps = { queryConfigEnabled: true,}; "
+let swaggerUI = "export const swaggerUIProps = { queryConfigEnabled: true,  defaultModelExpandDepth: -1, defaultModelsExpandDepth: -1,}; "
 let definitions = "export const definitions =" + JSON.stringify(definitionsJson, null, 2);
 
 let writeConfig = sidebarConfig + swaggerUI + definitions
